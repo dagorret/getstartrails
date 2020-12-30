@@ -4,7 +4,7 @@ Out blog ass <%= Article.public_count %> articles and counting!
 
 <ul>
     <% @articles.each do |article| %>
-        <% unless articles.archived? %>
+        <% unless article.archived? %>
             <li>
                 <%= link_to article.title, article %>
             </li>
